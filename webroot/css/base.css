@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    font-size: 16px;
+    font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    color: #333333;
+}
+
+#container {
+    margin: 0px;
+}
+
+#header {
+    position: absolute;
+    top:15px;
+}
+
+#content {
+    margin: 85px auto;
+    width: 920px;
+}
+
+h1 {
+    margin-left: 10px;
+    line-height: 1em;
+    font-size: 60px;
+    color: #DDDDDD;
+}
+
+h1 a{
+    margin-left: 10px;
+    line-height: 1em;
+    font-size: 60px;
+    color: #DDDDDD;
+}
+
+h1 a:visited {
+    color: #DDDDDD;
+    line-height: 1em;
+    font-size: 60px;
+}
+
+h1 a:hover {
+    color: #3399FF;
+    line-height: 1em;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h2 span {
+    font-size: 0.8em;
+}
+
+a {
+    color: #3399FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3399FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3399FF;
+}
+
+.textarea {
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98%;
+    height: 100px;
+    padding: 3px;
+}
+
+form {
+    display: inline;
+}
+
+div.error {
+    background-color: red;
+}
+
+.error-message {
+    color: white;
+}
+
+#flashMessage {
+    color: red;
+}
+
+table {
+    font-size: 13.34px;
+    margin-top: 10px;
+    width: 100%;
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+ }
+
+th, td {
+    font-size: 13.34px;
+    padding: 3px;
+    border-bottom: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+ }
+
+th {
+    background-color: #DEDEDE;
+}
+
+div.query {
+    margin: 10px 0;
+    padding: 5px;
+    border: 2px solid #CCCCCC;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+         -o-border-radius: 6px;
+            border-radius: 6px;
+ }
+
+.CodeMirror {
+    font-size: 20px;
+    border: 1px solid #CCCCCC;
+    width: 98%;
+    height: 100px;
+    padding: 3px;
+ }
+
+.CodeMirror-scroll {
+    height: 100px;
+}
+
+.CodeMirror pre {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+pre.prettyprint {
+    border: none;
+    padding: 5px;
+    background-color: #EDEDED;
+ }
+
+pre.prettyprint span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.2em;
+}
+
+div.action {
+    margin-top: 5px;
+ }
+
+.paging span {
+    padding: 5px;
+ }
+
+.paging span.disabled {
+    display: none;
+ }
+
+.paging span.current {
+    color: #DDDDDD;
+ }
+
+input[type="submit"],
+.button, a.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #050505;
+    padding: 5px 15px;
+    background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #d1d1d1);
+    background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#ffffff),
+    to(#d1d1d1));
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border: 1px solid #d4d6c9;
+    -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0),
+    inset 0px 0px 0px rgba(255,255,255,0);
+    -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0),
+    inset 0px 0px 0px rgba(255,255,255,0);
+    text-shadow:
+    0px -1px 0px rgba(000,000,000,0),
+    0px 1px 0px rgba(255,255,255,0);
+}
+
+input[type="submit"]:hover,
+.button:hover {
+    font-size: 12px;
+    color: #050505;
+    padding: 5px 15px;
+    background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #DDDDDD);
+    background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#ffffff),
+    to(#DDDDDD));
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border: 1px solid #d4d6c9;
+    -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0),
+    inset 0px 0px 0px rgba(255,255,255,0);
+    -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0),
+    inset 0px 0px 0px rgba(255,255,255,0);
+    text-shadow:
+    0px -1px 0px rgba(000,000,000,0),
+    0px 1px 0px rgba(255,255,255,0);
+}
