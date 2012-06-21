@@ -4,6 +4,8 @@ like [Oculus](https://github.com/paulrosania/oculus).
 
 ## Install
 
-   ./Console/cake schema create queries --plugin Query
+### Create schema
+
+    ./Console/cake schema create queries --plugin Query
 
 
