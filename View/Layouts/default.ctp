@@ -35,6 +35,7 @@
                 });
 
                 // CodeMirror
+                if (document.getElementById("query")) {
                 var editor = CodeMirror.fromTextArea(document.getElementById("query"), {
                 mode: "text/x-mysql",
                 tabMode: "indent",
@@ -47,9 +48,9 @@
                 } else {
                 var query = 'select * from ' + $(this).text() + ';';
                 }
-                
                 editor.setValue(query);
                 });
+                }
 
                 // Google Code Prettify
                 prettyPrint();
