@@ -11,6 +11,15 @@ class Query extends AppModel {
     public $validate = array('query' => array('rule' => 'notEmpty'));
 
     /**
+     * getDataSourceInfo
+     *
+     */
+    public function getDataSourceInfo(){
+        $db = ConnectionManager::getDataSource($this->useDbConfig);
+        return '[' . $db->config['datasource'] . ']' . $db->config['login'] . '@' . $db->config['host'] . ':' . $db->config['port'] . '/' . $db->config['database'];
+    }
+
+    /**
      * findRecentQueries
      *
      */

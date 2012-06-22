@@ -3,7 +3,7 @@
     <head>
         <?php echo $this->Html->charset(); ?>
         <title>
-            <?php echo __('Query:'); ?>
+            <?php echo __d('Query', 'Query:'). ' ' . $source; ?>
         </title>
         <?php
           echo $this->Html->meta('icon');
@@ -19,10 +19,9 @@
     <body>
         <div id="container">
             <div id="header">
-                <h1><?php echo $this->Html->link(__('Query:'), array('action' => 'index')); ?></h1>
+                <h1><?php echo $this->Html->link(__d('Query', 'Query:'), array('action' => 'index')); ?><small><?php echo $source; ?></small></h1>
             </div>
             <div id="content">
-
                 <?php echo $this->Session->flash(); ?>
 
                 <?php echo $content_for_layout; ?>

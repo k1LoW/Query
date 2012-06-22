@@ -13,6 +13,15 @@ class QueryController extends AppController {
                                );
 
     /**
+     * beforeRender
+     *
+     */
+    public function beforeRender(){
+        $source = $this->Query->getDataSourceInfo();
+        $this->set(compact('source'));
+    }
+
+    /**
      * index
      *
      */
