@@ -20,6 +20,15 @@ class Query extends AppModel {
     }
 
     /**
+     * listSources
+     *
+     */
+    public function getTableNames(){
+        $db = ConnectionManager::getDataSource($this->useDbConfig);
+        return $db->listSources();
+    }
+
+    /**
      * findRecentQueries
      *
      */

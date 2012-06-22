@@ -33,12 +33,24 @@
                 $('#query').on('ready keyup', function() {
                 $('#hidden_query').val($(this).val());
                 });
+
                 // CodeMirror
                 var editor = CodeMirror.fromTextArea(document.getElementById("query"), {
                 mode: "text/x-mysql",
                 tabMode: "indent",
                 matchBrackets: true
                 });
+
+                $('.tables span').on('click', function() {
+                if (editor.getValue()) {
+                var query = editor.getValue() + "\n" + 'select * from ' + $(this).text() + ';';
+                } else {
+                var query = 'select * from ' + $(this).text() + ';';
+                }
+                
+                editor.setValue(query);
+                });
+
                 // Google Code Prettify
                 prettyPrint();
                 });

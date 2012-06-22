@@ -18,7 +18,8 @@ class QueryController extends AppController {
      */
     public function beforeRender(){
         $source = $this->Query->getDataSourceInfo();
-        $this->set(compact('source'));
+        $tables = $this->Query->getTableNames();
+        $this->set(compact('source', 'tables'));
     }
 
     /**

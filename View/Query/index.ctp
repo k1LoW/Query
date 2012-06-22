@@ -1,3 +1,8 @@
+<div class="tables">
+    <?php foreach($tables as $table): ?>
+    <span><?php echo $table; ?></span>
+    <?php endforeach; ?>
+</div>
 <?php echo $this->Form->create('Query', array('url' => array('controller' => 'query', 'action' => 'index'))); ?>
 
 <?php echo $this->Form->input('query', array('type' => 'textarea', 'id' => 'query', 'label' => false)); ?>
