@@ -14,6 +14,16 @@ class QueryController extends AppController {
     public $helpers = array('Html', 'Form');
 
     /**
+     * beforeFilter
+     *
+     */
+    public function beforeFilter(){
+        if (Configure::read('debug') < 2) {
+            throw new NotFoundException(__('Invalid Access'));
+        }
+    }
+
+    /**
      * beforeRender
      *
      */
