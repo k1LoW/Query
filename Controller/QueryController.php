@@ -11,6 +11,7 @@ class QueryController extends AppController {
     public $components = array('Session',
                                'Security'
                                );
+    public $helpers = array('Html', 'Form');
 
     /**
      * beforeRender
