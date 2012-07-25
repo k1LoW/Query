@@ -12,3 +12,6 @@ Second, Create schema.
 
 Then, goto http://yourapp/query/ .
 
+## License
+
+the MIT License
